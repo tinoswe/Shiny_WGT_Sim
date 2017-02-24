@@ -27,7 +27,7 @@ shinyUI(
   
   mainPanel(
     tabsetPanel(
-      tabPanel("Data", "") # dataTableOutput('table'))
+      tabPanel("Data", dataTableOutput('table'))
     ))
   )
 )
