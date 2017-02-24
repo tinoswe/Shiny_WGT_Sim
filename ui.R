@@ -23,13 +23,11 @@ shinyUI(
            numericInput("m10", 
                         label = h4("n° esperimenti virtuali"), 
                         value = 1000))   
-  )#,
+  ),
   
-  #sidebarLayout(
-  #  sidebarPanel( "sidebar panel"),
-  #  mainPanel("main panel")
-  #)
-  
-  
-  
-))
+  mainPanel(
+    tabsetPanel(
+      tabPanel("Data", "") # dataTableOutput('table'))
+    ))
+  )
+)
